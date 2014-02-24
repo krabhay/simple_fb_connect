@@ -84,15 +84,14 @@ function simple_fb_connect_config_features_export_render($module_name, $data, $e
 }
 
 /**
- * Implements hook_features_revert().
+ * Implements hook_features_revert(). [component_hook]
  */
 function simple_fb_connect_config_features_revert($module) {
   simple_fb_connect_config_features_rebuild($module);
 }
 
 /**
- * Implements hook_features_rebuild().
- *
+ * Implements hook_features_rebuild(). [component_hook]
  */
 function simple_fb_connect_config_features_rebuild($module) {
   $items = module_invoke($module, 'simple_fb_connect_config_features_default_settings');
