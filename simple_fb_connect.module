@@ -272,7 +272,7 @@ function simple_fb_connect_unique_user_name($fb_name, $i = 0) {
 function simple_fb_connect_features_api() {
   return array(
     'simple_fb_connect_config' => array(
-      'name' => 'Simple Facebook Connect Configuration Configs',
+      'name' => 'Simple Facebook Connect Configuration',
       'file' => drupal_get_path('module', 'simple_fb_connect') . '/simple_fb_connect.features.inc',
       'default_hook' => 'simple_fb_connect_config_features_default_settings',
       'feature_source' => TRUE,
