@@ -38,8 +38,6 @@ function simple_fb_connect_config_features_export_options() {
  *   The pipe array of further processors that should be called
  */
 function simple_fb_connect_config_features_export($data, &$export, $module_name) {
-  dsm("export - ");
-  dsm($export);
   //we have module dependencies in order for this module to function properly
   //so we'll add them here
   $export['dependencies']['simple_fb_connect'] = 'simple_fb_connect';
