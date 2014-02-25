@@ -75,6 +75,7 @@ function simple_fb_connect_config_features_export($data, &$export, $module_name)
 function simple_fb_connect_config_features_export_render($module_name, $data, $export = NULL) {
   $code = array();
   foreach ($data as $component) {
+    //here it is just a variable_get, in other cases, it could be a query!
     $code[$component] = variable_get($component);
   }
   $code = "  return " . features_var_export($code, '  ') . ";";
